@@ -1,33 +1,102 @@
-📁 All your files are in ~/.hermes/:
+````md
+# 📁 Hermes Configuration & Data Locations
 
-   Settings:  /home/ubuntu/.hermes/config.yaml
-   API Keys:  /home/ubuntu/.hermes/.env
-   Data:      /home/ubuntu/.hermes/cron/, sessions/, logs/
+All your files are stored in `~/.hermes/`:
 
-────────────────────────────────────────────────────────────
+| Type | Path |
+|---|---|
+| **Settings** | `/home/ubuntu/.hermes/config.yaml` |
+| **API Keys** | `/home/ubuntu/.hermes/.env` |
+| **Data** | `/home/ubuntu/.hermes/cron/`, `sessions/`, `logs/` |
 
-📝 To edit your configuration:
+---
 
-   hermes setup          Re-run the full wizard
-   hermes setup model    Change model/provider
-   hermes setup terminal Change terminal backend
-   hermes setup gateway  Configure messaging
-   hermes setup tools    Configure tool providers
+# 📝 Editing Your Configuration
 
-   hermes config         View current settings
-   hermes config edit    Open config in your editor
-   hermes config set <key> <value>
-                          Set a specific value
+## Setup Commands
 
-   Or edit the files directly:
-   nano /home/ubuntu/.hermes/config.yaml
-   nano /home/ubuntu/.hermes/.env
+```bash
+hermes setup
+````
 
-────────────────────────────────────────────────────────────
+Re-run the full setup wizard.
 
-🚀 Ready to go!
+```bash
+hermes setup model
+```
 
-   hermes              Start chatting
-   hermes gateway      Start messaging gateway
-   hermes doctor       Check for issues
+Change model/provider.
 
+```bash
+hermes setup terminal
+```
+
+Change terminal backend.
+
+```bash
+hermes setup gateway
+```
+
+Configure messaging.
+
+```bash
+hermes setup tools
+```
+
+Configure tool providers.
+
+---
+
+## Configuration Commands
+
+```bash
+hermes config
+```
+
+View current settings.
+
+```bash
+hermes config edit
+```
+
+Open config in your editor.
+
+```bash
+hermes config set <key> <value>
+```
+
+Set a specific configuration value.
+
+---
+
+## Edit Files Directly
+
+```bash
+nano /home/ubuntu/.hermes/config.yaml
+nano /home/ubuntu/.hermes/.env
+```
+
+---
+
+# 🚀 Ready to Go
+
+```bash
+hermes
+```
+
+Start chatting.
+
+```bash
+hermes gateway
+```
+
+Start the messaging gateway.
+
+```bash
+hermes doctor
+```
+
+Check for issues.
+
+```
+```
